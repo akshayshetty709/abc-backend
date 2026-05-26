@@ -21,7 +21,7 @@ pipeline {
 
             // Step 1: Copy cloned repo to EC2
             sh '''
-            scp -o StrictHostKeyChecking=no -r ${WORKSPACE}/. ubuntu@${EC2_IP}:/home/ubuntu/app/
+            scp -o StrictHostKeyChecking=no -r ${WORKSPACE}/. ubuntu@${EC2_IP}:/home/ubuntu/
             '''
 
             // Step 2: SSH into EC2 and build
