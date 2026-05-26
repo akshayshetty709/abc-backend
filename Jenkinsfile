@@ -16,19 +16,31 @@ pipeline {
         }
 
         stage('install & build') {
-            steps {
-                sshagent(credentials: ['ec2_key']) {
+    steps {
+        sshagent(credentials: ['ec2_key']) {
 
-                    sh '''
-                    ssh -o StrictHostKeyChecking=no ubuntu@${EC2_IP} '
-                    set -e
+            // Step 1: Copy cloned repo to EC2
+            sh '''
+            scp -o StrictHostKeyChecking=no -r ${WORKSPACE}/. ubuntu@${EC2_IP}:/home/ubuntu/app/
+            '''
 
-                    docker build -t bkimage .
-                    docker run -d -p 3000:3000 --name bkapp bkimage
-                    '
-                    '''
-                }
-            }
+            // Step 2: SSH into EC2 and build
+            sh '''
+            ssh -o StrictHostKeyChecking=no ubuntu@${EC2_IP} '
+            set -e
+            cd /home/ubuntu/app
+
+            docker stop bkapp || true
+            docker rm bkapp || true
+            docker rmi bkimage || true
+
+            docker build -t bkimage .
+            docker run -d -p 3000:3000 --name bkapp bkimage
+            '
+            '''
+        }
+    }
+        }
         }
     }
 }
