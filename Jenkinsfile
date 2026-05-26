@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        EC2_IP = "34.235.29.193"
+        EC2_IP = "52.66.188.69"
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'github-credentials',
-                    url: 'https://github.com/cloudhostingky-alt/E-flow-Backend.git'
+                    url:'https://github.com/akshayshetty709/abc-backend.git'
             }
         }
 
@@ -22,15 +22,6 @@ pipeline {
                     sh '''
                     ssh -o StrictHostKeyChecking=no ubuntu@${EC2_IP} '
                     set -e
-
-                    rm -rf E-flow-Backend
-
-                    git clone https://github.com/cloudhostingky-alt/E-flow-Backend.git
-
-                    cd E-flow-Backend
-                    git checkout kreethi
-                    git pull origin kreethi
-
                     docker stop bkapp || true
                     docker rm bkapp || true
                     docker rmi bkimage || true
