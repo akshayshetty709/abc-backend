@@ -28,7 +28,7 @@ pipeline {
             sh '''
             ssh -o StrictHostKeyChecking=no ubuntu@${EC2_IP} '
             set -e
-            cd /home/ubuntu/app
+            cd /home/ubuntu/
 
             docker stop bkapp || true
             docker rm bkapp || true
