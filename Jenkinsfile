@@ -22,9 +22,6 @@ pipeline {
                     sh '''
                     ssh -o StrictHostKeyChecking=no ubuntu@${EC2_IP} '
                     set -e
-                    docker stop bkapp || true
-                    docker rm bkapp || true
-                    docker rmi bkimage || true
 
                     docker build -t bkimage .
                     docker run -d -p 3000:3000 --name bkapp bkimage
