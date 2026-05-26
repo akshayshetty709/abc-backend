@@ -35,7 +35,7 @@ pipeline {
             docker rmi bkimage || true
 
             docker build -t bkimage .
-            docker run -d -p 3000:3000 --name bkapp bkimage
+            docker run -d -p 5000:5000 --name bkapp bkimage
             '
             '''
         }
