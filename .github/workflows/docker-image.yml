@@ -35,7 +35,7 @@ jobs:
           docker run -d \
             --name bkapp \
             -p 5000:5000 \
-            ${{ secrets.DOCKERHUB_USERNAME }}/bkimages:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/bkimage:latest
 
       - name: Verify container is running
         run: |
