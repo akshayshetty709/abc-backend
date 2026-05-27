@@ -28,16 +28,16 @@ jobs:
             --tag ${{ secrets.DOCKERHUB_USERNAME }}/my-image-name:latest
 
       - name: Push to Docker Hub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-image-name --all-tags
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/bkimage --all-tags
 
       - name: Run the Docker image
         run: |
           docker run -d \
-            --name my-running-container \
-            -p 8080:8080 \
-            ${{ secrets.DOCKERHUB_USERNAME }}/my-image-name:latest
+            --name bkapp \
+            -p 5000:5000 \
+            ${{ secrets.DOCKERHUB_USERNAME }}/bkimages:latest
 
       - name: Verify container is running
         run: |
           docker ps
-          curl --retry 5 --retry-delay 3 http://localhost:8080
+          curl --retry 5 --retry-delay 3 http://localhost:5000
