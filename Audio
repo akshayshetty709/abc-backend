@@ -1,1 +1,6 @@
 systemctl --user restart wireplumber pipewire pipewire-pulse
+# 1. Force kill the audio system completely
+killall -9 pipewire wireplumber pipewire-pulse
+
+# 2. Restart the Ubuntu Bluetooth hardware service
+sudo systemctl restart bluetooth
