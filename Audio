@@ -4,3 +4,7 @@ killall -9 pipewire wireplumber pipewire-pulse
 
 # 2. Restart the Ubuntu Bluetooth hardware service
 sudo systemctl restart bluetooth
+
+claude solution 
+sudo apt install pulseaudio-module-bluetooth
+pactl load-module module-bluetooth-discover
