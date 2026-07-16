@@ -21,3 +21,13 @@ journalctl --user -b 0 | grep -i -E "sco|hfp|bluez" | tail -40
 echo 'options btusb enable_autosuspend=n' | sudo tee /etc/modprobe.d/bluetooth.conf
 sudo update-initramfs -u
 sudo reboot
+
+pactl list sinks | grep -A 15 "bluez_output" | grep -i mute
+
+pactl get-sink-volume bluez_output.41_42_D0_16_00_C1.1
+
+pactl set-sink-volume bluez_output.41_42_D0_16_00_C1.1 100%
+pactl set-sink-mute bluez_output.41_42_D0_16_00_C1.1 0
+
+pactl list sink-inputs
+pactl list sink-inputs | grep -A 20 -i chrome
