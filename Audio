@@ -31,3 +31,4 @@ pactl set-sink-mute bluez_output.41_42_D0_16_00_C1.1 0
 
 pactl list sink-inputs
 pactl list sink-inputs | grep -A 20 -i chrome
+cat /sys/module/btusb/parameters/enable_autosuspend
