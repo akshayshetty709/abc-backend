@@ -1,0 +1,41 @@
+journalctl --user -b 0 | grep -i -E "sco|hfp|bluez" | tail -40
+Jul 16 09:11:07 kiaq-lap-130 gnome-session[3483]: gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3520: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:07 kiaq-lap-130 gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3520: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:07 kiaq-lap-130 systemd[3252]: Started app-gnome-at\x2dspi\x2ddbus\x2dbus-3516.scope - Application launched by gnome-session-binary.
+Jul 16 09:11:09 kiaq-lap-130 gnome-session[3483]: gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3706: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:09 kiaq-lap-130 gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3706: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:09 kiaq-lap-130 systemd[3252]: Started app-gnome-org.gnome.Evolution\x2dalarm\x2dnotify-3716.scope - Application launched by gnome-session-binary.
+Jul 16 09:11:09 kiaq-lap-130 systemd[3252]: Started app-gnome-org.gnome.SettingsDaemon.DiskUtilityNotify-3741.scope - Application launched by gnome-session-binary.
+Jul 16 09:11:09 kiaq-lap-130 systemd[3252]: Started app-gnome-snap\x2duserd\x2dautostart-3723.scope - Application launched by gnome-session-binary.
+Jul 16 09:11:09 kiaq-lap-130 gnome-session[3483]: gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3720: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:09 kiaq-lap-130 gnome-session[3483]: gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3734: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:09 kiaq-lap-130 gnome-session[3483]: gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3755: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:09 kiaq-lap-130 gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3720: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:09 kiaq-lap-130 gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3734: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+Jul 16 09:11:09 kiaq-lap-130 gnome-session-binary[3483]: GnomeDesktop-WARNING: Could not create transient scope for PID 3755: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process
+                                                2 innerEnable/this.data.dbusConnectionId<() ["file:///usr/share/gnome-shell/extensions/ding@rastersoft.com/extension.js":251:17]
+Jul 16 09:12:10 kiaq-lap-130 systemd[3252]: Started app-gnome-ubuntu\x2dadvantage\x2dnotification-4361.scope - Application launched by gnome-session-binary.
+Jul 16 09:12:10 kiaq-lap-130 systemd[3252]: Started app-gnome-update\x2dnotifier-4358.scope - Application launched by gnome-session-binary.
+Jul 16 09:14:58 kiaq-lap-130 systemd[3252]: Started app-gnome-cliq-4451.scope - Application launched by gnome-shell.
+Jul 16 09:14:59 kiaq-lap-130 systemd[3252]: Started app-org.chromium.Chromium-4451.scope.
+Jul 16 09:15:10 kiaq-lap-130 systemd[3252]: Started app-gnome-google\x2dchrome-4642.scope - Application launched by gnome-shell.
+Jul 16 09:15:12 kiaq-lap-130 systemd[3252]: Started app-com.google.Chrome-4642.scope.
+Jul 16 09:54:21 kiaq-lap-130 systemd[3252]: Started app-gnome-org.gnome.Terminal-13377.scope - Application launched by gnome-shell.
+Jul 16 09:54:22 kiaq-lap-130 systemd[3252]: Started vte-spawn-504457fd-d88b-41c5-b2e1-09c9a2980520.scope - VTE child process 13395 launched by gnome-terminal-server process 13387.
+Jul 16 10:07:49 kiaq-lap-130 systemd[3252]: Started app-gnome-gnome\x2dbluetooth\x2dpanel-13608.scope - Application launched by gnome-shell.
+Jul 16 10:07:50 kiaq-lap-130 dbus-daemon[3285]: [session uid=1000 pid=3285] Activating via systemd: service name='org.bluez.obex' unit='obex.service' requested by ':1.127' (uid=1000 pid=13608 comm="/usr/bin/gnome-control-center bluetooth" label="unconfined")
+Jul 16 10:07:50 kiaq-lap-130 dbus-daemon[3285]: [session uid=1000 pid=3285] Successfully activated service 'org.bluez.obex'
+Jul 16 10:26:58 kiaq-lap-130 systemd[3252]: Started app-gnome-org.gnome.Terminal-13952.scope - Application launched by gnome-shell.
+Jul 16 10:26:59 kiaq-lap-130 systemd[3252]: Started vte-spawn-de56e7ce-5140-41a1-b078-2c56e68a3c4a.scope - VTE child process 13972 launched by gnome-terminal-server process 13963.
+Jul 16 11:33:49 kiaq-lap-130 systemd[3252]: Started app-gnome-gnome\x2dbluetooth\x2dpanel-18110.scope - Application launched by gnome-shell.
+Jul 16 11:45:49 kiaq-lap-130 wireplumber[3272]: (bluez_input.41_42_D0_16_00_C1.0-60) suspended -> error (Received error event)
+Jul 16 11:45:49 kiaq-lap-130 wireplumber[3272]: (bluez_output.41_42_D0_16_00_C1.1-85) running -> error (Received error event)
+Jul 16 11:45:49 kiaq-lap-130 wireplumber[3272]: Failure in Bluetooth audio transport /org/bluez/hci0/dev_41_42_D0_16_00_C1/fd38
+Jul 16 11:45:49 kiaq-lap-130 pipewire[3266]: pw.node: (bluez_input.41_42_D0_16_00_C1.0-60) suspended -> error (Received error event)
+Jul 16 11:45:49 kiaq-lap-130 pipewire[3266]: pw.node: (bluez_output.41_42_D0_16_00_C1.1-85) running -> error (Received error event)
+Jul 16 11:47:25 kiaq-lap-130 systemd[3252]: Started app-gnome-gnome\x2dsound\x2dpanel-18379.scope - Application launched by gnome-shell.
+Jul 16 11:52:43 kiaq-lap-130 wireplumber[3272]: (bluez_input.41_42_D0_16_00_C1.0-75) running -> error (Received error event)
+Jul 16 11:52:43 kiaq-lap-130 wireplumber[3272]: (bluez_output.41_42_D0_16_00_C1.1-82) running -> error (Received error event)
+Jul 16 11:52:43 kiaq-lap-130 wireplumber[3272]: Failure in Bluetooth audio transport /org/bluez/hci0/dev_41_42_D0_16_00_C1/fd38
+Jul 16 11:52:43 kiaq-lap-130 pipewire[3266]: pw.node: (bluez_input.41_42_D0_16_00_C1.0-75) running -> error (Received error event)
+Jul 16 11:52:43 kiaq-lap-130 pipewire[3266]: pw.node: (bluez_output.41_42_D0_16_00_C1.1-82) running -> error (Received error event)
