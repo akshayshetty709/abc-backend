@@ -11,3 +11,10 @@ pactl load-module module-bluetooth-discover
 pactl set-card-profile bluez_card.41_42_D0_16_00_C1 headset-head-unit-msbc
 pactl set-card-profile bluez_card.41_42_D0_16_00_C1 headset-head-unit-cvsd
 bluetoothctl info 41:42:D0:16:00:C1
+bluetoothctl info 41:42:D0:16:00:C1 | grep Connected
+pactl list sinks short
+pactl list modules short | grep bluetooth
+journalctl --user -b 0 | grep -i -E "sco|hfp|bluez" | tail -40
+
+
+
