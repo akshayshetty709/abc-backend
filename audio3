@@ -1,0 +1,53 @@
+pactl list sink-inputs | grep -A 20 -i chrome
+		application.name = "Google Chrome"
+		application.process.id = "20565"
+		application.process.user = "kiaq-lap-130"
+		application.process.host = "kiaq-lap-130"
+		application.process.binary = "chrome"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "93ea2618d15e4133a200c33d4fdda349"
+		application.icon_name = "google-chrome"
+		media.name = "Playback"
+		node.rate = "1/48000"
+		node.latency = "1024/48000"
+		stream.is-live = "true"
+		node.name = "Google Chrome"
+		node.want-driver = "true"
+		node.autoconnect = "true"
+		media.class = "Stream/Output/Audio"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "split"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "104"
+		object.id = "91"
+		object.serial = "1155"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.tlength = "16384"
+		pulse.attr.prebuf = "12296"
+		pulse.attr.minreq = "4096"
+		module-stream-restore.id = "sink-input-by-application-name:Google Chrome"
+
+Sink Input #1232
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 1231
+	Sink: 1193
+	Sample Specification: float32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "48000"  format.channels = "2"  format.channel_map = "\"front-left,front-right\""
+	Corked: no
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Sink Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "Chromium"
