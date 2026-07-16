@@ -10,3 +10,4 @@ sudo apt install pulseaudio-module-bluetooth
 pactl load-module module-bluetooth-discover
 pactl set-card-profile bluez_card.41_42_D0_16_00_C1 headset-head-unit-msbc
 pactl set-card-profile bluez_card.41_42_D0_16_00_C1 headset-head-unit-cvsd
+bluetoothctl info 41:42:D0:16:00:C1
