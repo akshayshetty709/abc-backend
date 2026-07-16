@@ -18,3 +18,6 @@ journalctl --user -b 0 | grep -i -E "sco|hfp|bluez" | tail -40
 
 
 
+echo 'options btusb enable_autosuspend=n' | sudo tee /etc/modprobe.d/bluetooth.conf
+sudo update-initramfs -u
+sudo reboot
